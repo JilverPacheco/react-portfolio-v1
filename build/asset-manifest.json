@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.188045c8.chunk.css",
+    "main.js": "/static/js/main.ef0fd11a.chunk.js",
+    "main.js.map": "/static/js/main.ef0fd11a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.efc1ef97.js",
+    "runtime-main.js.map": "/static/js/runtime-main.efc1ef97.js.map",
+    "static/css/2.2aa38b9c.chunk.css": "/static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.540d7457.chunk.js": "/static/js/2.540d7457.chunk.js",
+    "static/js/2.540d7457.chunk.js.map": "/static/js/2.540d7457.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.2aa38b9c.chunk.css.map": "/static/css/2.2aa38b9c.chunk.css.map",
+    "static/css/main.188045c8.chunk.css.map": "/static/css/main.188045c8.chunk.css.map",
+    "static/js/2.540d7457.chunk.js.LICENSE.txt": "/static/js/2.540d7457.chunk.js.LICENSE.txt",
+    "static/media/ELECTRO_UDI.138353d5.png": "/static/media/ELECTRO_UDI.138353d5.png",
+    "static/media/ROBOT_ANTROPOMORFICO.1965b92e.png": "/static/media/ROBOT_ANTROPOMORFICO.1965b92e.png",
+    "static/media/SCADA_Labview_Cerveza.b126bdf4.png": "/static/media/SCADA_Labview_Cerveza.b126bdf4.png",
+    "static/media/home.styles.css": "/static/media/background.5b53f3d2.png",
+    "static/media/dyco.9b774956.svg": "/static/media/dyco.9b774956.svg",
+    "static/media/profile.49652c29.jpeg": "/static/media/profile.49652c29.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efc1ef97.js",
+    "static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.540d7457.chunk.js",
+    "static/css/main.188045c8.chunk.css",
+    "static/js/main.ef0fd11a.chunk.js"
+  ]
+}
