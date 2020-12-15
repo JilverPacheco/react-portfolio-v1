@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
+import { ExperienceData } from "./experience-data";
 import "./experience.styles.css";
-import EXPERIENCE_1 from "../../assets/img/dyco.svg";
+
 export const Experience = () => {
   return (
     <Fragment>
@@ -8,33 +9,39 @@ export const Experience = () => {
         <div className="experience-wrapper">
           <h2 className="title">Experiencia</h2>
           <div className="experience-content">
-            <div className="card-experience">
-              <img className="logo-company" src={EXPERIENCE_1} alt="Dyco" />
-              <hr />
-              <div className="experience-role">
-                <p>
-                  <strong>Rol: </strong>Análista de desarrollo Full Stack
-                </p>
-                <p>
-                  <strong>Empresa: </strong>DyCO Solutions
-                </p>
-                <p>
-                  <strong>Duración: </strong>Jul 2020 - Nov 2020
-                </p>
-                <p>
-                  <strong>Ubicación: </strong>Bucaramanga, Santander
-                </p>
-                <p>
-                  <strong>Descripción: </strong>
-                  Desarollo de plataforma online que simula de manager personal
-                  para los artistas que se encuentren alojados en su base de
-                  datos.
-                </p>
-                <p>
-                  <strong>Tecnológias: </strong>React.Js, SASS, Firebase
-                </p>
+            {ExperienceData.map((exp, index) => (
+              <div className="card-experience">
+                <span className="skill__card" key={index}></span>
+                <img className="logo-company" src={exp.imgCompany} alt="Dyco" />
+                <hr />
+                <div className="experience-role">
+                  <p>
+                    <strong>Rol: </strong>
+                    {exp.role}
+                  </p>
+                  <p>
+                    <strong>Empresa: </strong>
+                    {exp.company}
+                  </p>
+                  <p>
+                    <strong>Duración: </strong>
+                    {exp.duration}
+                  </p>
+                  <p>
+                    <strong>Ubicación: </strong>
+                    {exp.ubication}
+                  </p>
+                  <p>
+                    <strong>Descripción: </strong>
+                    {exp.description}
+                  </p>
+                  <p>
+                    <strong>Tecnológias: </strong>
+                    {exp.technologies}
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

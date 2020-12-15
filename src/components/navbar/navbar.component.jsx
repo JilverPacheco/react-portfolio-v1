@@ -1,8 +1,6 @@
-import React, { Fragment, useState, useEffect } from "react";
-import {FiChevronsRight, FiChevronsLeft} from "react-icons/fi"
+import React, { Fragment, useState } from "react";
+import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
 import "./navbar.styles.css";
-
-
 
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -47,9 +45,9 @@ export const Navbar = () => {
         <div className="nav-content">
           <div className="logo">
             <a href="#inicio">
-              <FiChevronsLeft/>
+              <FiChevronsLeft />
               Jilver
-              <FiChevronsRight/>
+              <FiChevronsRight />
             </a>
           </div>
           <ul className="menu-items">
@@ -65,9 +63,6 @@ export const Navbar = () => {
             </li>
             <li className="nav-items">
               <a href="#experiencia">Experiencia</a>
-            </li>
-            <li className="nav-items">
-              <a href="#servicios">Servicios</a>
             </li>
             <li className="nav-items">
               <a href="#proyectos">Proyectos</a>

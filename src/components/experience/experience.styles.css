@@ -1,7 +1,7 @@
 .experience {
   width: 100%;
   min-height: 100vh;
-  background: #202020;
+  background: #f0f2f5;
 }
 .experience-wrapper {
   padding-top: 60px;
@@ -9,11 +9,11 @@
 
 }
 .experience .title {
-  color: #f0f2f5;
+  color: #202020;
 }
 .experience .title::after {
   content: "Trabajos";
-  background-color: #202020;
+  background-color: #f0f2f5;
 }
 
 .experience-content {

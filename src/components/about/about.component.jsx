@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <Fragment>
       <section className="about" id="acerca">
-        <Fade duration={500}>
+        <Fade duration={750}>
           <div className="about-wrapper">
             <h2 className="title">Acerca</h2>
             <div className="about-content">
@@ -37,14 +37,14 @@ export const About = () => {
                 <br />
                 <br />
                 <br />
-                <div>
+                <div className="about-content-btns">
                   <a className="cv" href="#">
                     Curriculum vitae
                   </a>
                   <a className="cv-lac" href="#">
                     CvLAC
                   </a>
-                  <a className="cv-lac" href="#">
+                  <a className="cv-contact" href="#contacto">
                     Contacto
                   </a>
                 </div>

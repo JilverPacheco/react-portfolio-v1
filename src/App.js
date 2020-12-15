@@ -17,7 +17,7 @@ export const App = () => {
       <Education/>
       <Skills/>
       <Experience/>
-      <Services/>
+      {/* <Services/> */}
       <Projects/>
     </div>
   );

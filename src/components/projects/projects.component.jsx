@@ -20,7 +20,7 @@ export const Projects = () => {
   return (
     <Fragment>
       <section className="projects" id="proyectos">
-        <Slide bottom duration={2000}>
+        <Slide bottom duration={1000}>
           <div className="projects-wrapper">
             <h2 className="title">Proyectos</h2>
             <div className="projects-content">
@@ -32,38 +32,9 @@ export const Projects = () => {
                     color: "#fff",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  #4e739b",
+                    borderRight: "7px solid  #333",
                   }}
-                  date="23 - Nov / 2020"
-                  iconStyle={{ background: "#2F3241", color: "#fff" }}
-                  icon={<SiElectron />}
-                >
-                  <h3 className="vertical-timeline-element-title">
-                    Electró-UDI
-                  </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    Javascript, Node.Js, Electron.Js, SASS
-                  </h4>
-                  <img className="image-event" src={P_ELECTRO_UDI} alt="..." />
-                  <p>
-                    Aplicación en la que los estudiantes de la carrera de
-                    ingeniería electrónica de la Universidad de Investigación y
-                    Desarrollo pueden navegar entre diferentes cursos académicos
-                    y encontrar información acerca de cartillas y proyectos
-                    realizados.
-                  </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  contentStyle={{
-                    background: "#333",
-                    color: "#fff",
-                  }}
-                  contentArrowStyle={{
-                    borderRight: "7px solid  #4e739b",
-                  }}
-                  date="15 - Oct / 2020"
+                  date="Oct / 2020"
                   iconStyle={{ background: "#D3291A", color: "#fff" }}
                   icon={<GiRobotGrab />}
                 >
@@ -78,7 +49,6 @@ export const Projects = () => {
                     src={P_ROBOT_ANTROPOMORFICO}
                     alt="..."
                   />
-
                   <p>
                     Creación de un brazos robótico tipo antropomórfico con su
                     respectiva documentación.
@@ -92,17 +62,45 @@ export const Projects = () => {
                     color: "#fff",
                   }}
                   contentArrowStyle={{
-                    borderRight: "7px solid  #4e739b",
+                    borderRight: "7px solid  #333",
+                  }}
+                  date="Nov / 2020"
+                  iconStyle={{ background: "#2F3241", color: "#FFF" }}
+                  icon={<SiElectron />}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    Electró-UDI
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    Javascript, Node.Js, Electron.Js, SASS
+                  </h4>
+                  <img className="image-event" src={P_ELECTRO_UDI} alt="..." />
+                  <p>
+                    Aplicación nativa de windows en la que los estudiantes de
+                    ingeniería electrónica de la Universidad de Investigación y
+                    Desarrollo pueden encontrar diferentes cursos académicos y
+                    proyectos realizados.
+                  </p>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{
+                    background: "#333",
+                    color: "#fff",
+                  }}
+                  contentArrowStyle={{
+                    borderRight: "7px solid  #333",
                   }}
                   date="2008 - 2010"
                   iconStyle={{ background: "#F5DA00", color: "#fff" }}
                   icon={<FaUsersCog />}
                 >
                   <h3 className="vertical-timeline-element-title">
-                    Web Designer
+                    SCADA para la producción de cerveza
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle">
-                    Los Angeles, CA
+                    LabView
                   </h4>
                   <img
                     className="image-event"

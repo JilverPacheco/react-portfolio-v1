@@ -1,17 +1,99 @@
 .skills {
-    width: 100%;
-    min-height: 100vh;
-    background: #f0f2f5;
-  }
-  .skills-wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  
-  }
-  .skills .title {
-    color: #202020;
-  }
-  .skills .title::after {
-    content: "Trabajos";
-    background-color: #f0f2f5;
-  }
+  width: 100%;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+.skills-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.skills .title {
+  color: #202020;
+}
+.skills .title::after {
+  content: "Trabajos";
+  background-color: #f0f2f5;
+}
+.skills-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.skills-content .skill-class-1,
+.skills-content .skill-class-2,
+.skills-content .skill-class-3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.skills .skills-content .left {
+  width: 550px;
+  padding: 20px 0px;
+}
+.skills .skills-content .right {
+  width: 450px;
+}
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.skills .skills-content .left p {
+  text-align: justify;
+}
+.skills .skills-content .left a {
+  display: inline-block;
+  background: #60d3f3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #60d3f3;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.skills .skills-content .left a:hover {
+  color: #60d3f3;
+  background: none;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 0px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.skills .skills-content .right .line {
+  height: 15px;
+  width: 100%;
+  position: relative;
+  background: transparent;
+}
+.skills .skills-content .right .line::-webkit-progress-bar {
+  border-radius: 5px;
+  background: #444;
+}
+.skills .skills-content .right .line::-webkit-progress-value {
+  border-radius: 4px;
+  background: #60d3f3;
+  transition: 0.4s;
+}
+.skills .skills-content .right .line::-webkit-progress-value:hover {
+  border-radius: 4px;
+  background: crimson;
+}

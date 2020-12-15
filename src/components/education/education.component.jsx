@@ -1,24 +1,21 @@
 import React, { Fragment } from "react";
 import Slide from "react-reveal/Slide";
-// import { Timeline, UrlButton, ImageEvent, Events } from "@merc/react-timeline";
 import {
-  FaArrowUp,
-  FaSchool,
+  FaUniversity,
   FaNodeJs,
   FaReact,
   FaAngular,
   FaPhp,
+  FaJsSquare,
+  FaSchool
+  
 } from "react-icons/fa";
-import { MdSchool } from "react-icons/md";
+import { SiNextDotJs } from "react-icons/si";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-// Images
-// import P_ELECTRO_UDI from "../../assets/img/projects/ELECTRO_UDI.png";
-// import P_ROBOT_ANTROPOMORFICO from "../../assets/img/projects/ROBOT_ANTROPOMORFICO.png";
-// import P_SCADA_LABVIEW_CERVEZA from "../../assets/img/projects/SCADA_Labview_Cerveza.png";
 
 import "./education.styles.css";
 
@@ -26,7 +23,7 @@ export const Education = () => {
   return (
     <Fragment>
       <section className="education" id="educacion">
-        <Slide bottom duration={2000}>
+        <Slide bottom duration={750}>
           <div className="education-wrapper">
             <h2 className="title">Educación</h2>
             <div className="education-content">
@@ -42,7 +39,7 @@ export const Education = () => {
                   }}
                   date="2016"
                   iconStyle={{ background: "#333", color: "#fff" }}
-                  icon={<MdSchool />}
+                  icon={<FaSchool />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Bachiller académico
@@ -64,7 +61,7 @@ export const Education = () => {
                   }}
                   date="2017 - Presente"
                   iconStyle={{ background: "#333", color: "#fff" }}
-                  icon={<FaSchool />}
+                  icon={<FaUniversity />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Ingeniero electrónico
@@ -72,7 +69,29 @@ export const Education = () => {
                   <h4 className="vertical-timeline-element-subtitle">
                     Bucaramanga, Santander
                   </h4>
-                  <p>Universidad de Investigación y Desarrollo</p>
+                  <p>Universidad de Investigación y Desarrollo - UDI</p>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{
+                    background: "#333",
+                    color: "#fff",
+                  }}
+                  contentArrowStyle={{
+                    borderRight: "7px solid #333",
+                  }}
+                  date="2019"
+                  iconStyle={{ background: "#EFD81D", color: "#fff" }}
+                  icon={<FaJsSquare />}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    HTML5, CSS3, Javascript, AJAX, PHP y MySQL
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    Certificación virtual
+                  </h4>
+                  <p>UDEMY</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -127,8 +146,8 @@ export const Education = () => {
                     borderRight: "7px solid #333",
                   }}
                   date="2020"
-                  iconStyle={{ background: "#60D3F3", color: "#fff" }}
-                  icon={<FaReact />}
+                  iconStyle={{ background: "#2D2D2D", color: "#FFF" }}
+                  icon={<SiNextDotJs />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     React.Js (Hooks, Context, Redux, MERN), Next.Js y Gatsby
@@ -148,7 +167,7 @@ export const Education = () => {
                   contentArrowStyle={{
                     borderRight: "7px solid #333",
                   }}
-                  date="2020"
+                  date="2021"
                   iconStyle={{ background: "#7377AD", color: "#fff" }}
                   icon={<FaPhp />}
                 >
@@ -170,7 +189,7 @@ export const Education = () => {
                   contentArrowStyle={{
                     borderRight: "7px solid #333",
                   }}
-                  date="2020"
+                  date="2021"
                   iconStyle={{ background: "#D6002F", color: "#fff" }}
                   icon={<FaAngular />}
                 >
