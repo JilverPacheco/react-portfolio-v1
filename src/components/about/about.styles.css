@@ -1,0 +1,79 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+.about-wrapper {
+  padding-top: 60px;
+}
+.about .title::after {
+  content: "Quien soy";
+  background-color: #f1f1f1;
+}
+.about-content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 ;
+  /* flex-wrap: wrap; */
+}
+.about-content .column-left {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-content .column-left img {
+  width: 325px;
+
+  border-radius: 5px;
+}
+.about-content .column-right {
+  width: 60%;
+  height: 100%;
+  /* margin: 0px 10px 0px 0px; */
+  text-align: justify;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+}
+.about-content .column-right span {
+  font-weight: bold;
+}
+
+.about-content .column-right .cv {
+  text-decoration: none;
+  color: #f0f2f5;
+  padding: 10px 15px;
+  margin: 5px;
+  background: crimson;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.about-content .column-right .cv:hover {
+  color: crimson;
+  border: 2px solid crimson;
+  background: transparent;
+}
+
+.about-content .column-right .cv-lac {
+  text-decoration: none;
+  color: #f0f2f5;
+  padding: 10px 15px;
+  margin: 5px;
+  background: #4e739b;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.about-content .column-right .cv-lac:hover {
+  color: #4e739b;
+  border: 2px solid #4e739b;
+  background: transparent;
+}

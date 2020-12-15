@@ -1,0 +1,45 @@
+.experience {
+  width: 100%;
+  min-height: 100vh;
+  background: #202020;
+}
+.experience-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.experience .title {
+  color: #f0f2f5;
+}
+.experience .title::after {
+  content: "Trabajos";
+  background-color: #202020;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.card-experience {
+  width: 60%;
+  min-height: 250px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.4s;
+}
+.card-experience:hover{
+    transform: scale(1.025);
+}
+.logo-company {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+}

@@ -1,0 +1,45 @@
+.services {
+  width: 100%;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+.service-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.services .title {
+  color: #202020;
+}
+.services .title::after {
+  content: "Que hago";
+  background-color: #f0f2f5;
+}
+
+.service-content {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-content .service-list {
+  width: 350px;
+  margin: 10px;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+}
+.service-content .service-list:hover {
+  transform: scale(1.025);
+}

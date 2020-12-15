@@ -1,0 +1,25 @@
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background: #202020;
+}
+.projects-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.projects .title {
+  color: #f0f2f5;
+}
+.projects .title::after {
+  content: "Personales";
+  background-color: #202020;
+}
+
+.image-event {
+  display: block;
+  margin:10px auto;
+  width: 100%;
+}
+.projects-events {
+  text-align: center;
+}

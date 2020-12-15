@@ -1,0 +1,16 @@
+.education {
+  width: 100%;
+  min-height: 100vh;
+  background: #202020;
+}
+.education-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.education .title {
+  color: #f0f2f5;
+}
+.education .title::after {
+  content: "Académica";
+  background-color: #202020;
+}

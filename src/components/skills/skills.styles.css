@@ -1,0 +1,17 @@
+.skills {
+    width: 100%;
+    min-height: 100vh;
+    background: #f0f2f5;
+  }
+  .skills-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+  }
+  .skills .title {
+    color: #202020;
+  }
+  .skills .title::after {
+    content: "Trabajos";
+    background-color: #f0f2f5;
+  }
