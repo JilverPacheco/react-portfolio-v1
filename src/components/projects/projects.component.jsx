@@ -23,6 +23,10 @@ export const Projects = () => {
         <Slide bottom duration={1000}>
           <div className="projects-wrapper">
             <h2 className="title">Proyectos</h2>
+
+            {/* <h3 className="sub-title">React</h3>
+            <h3 className="sub-title">React Native</h3>
+            <h3 className="sub-title">Ingeniería</h3> */}
             <div className="projects-content">
               <VerticalTimeline>
                 <VerticalTimelineElement
@@ -41,9 +45,12 @@ export const Projects = () => {
                   <h3 className="vertical-timeline-element-title">
                     Brazo robótico antropomórfico
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
+                  <h5 className="vertical-timeline-element-subtitle">
+                    Tecnológias: SolidWorks
+                  </h5>
+                  {/* <h4 className="vertical-timeline-element-subtitle">
                     SolidWoks
-                  </h4>
+                  </h4> */}
                   <img
                     className="image-event"
                     src={P_ROBOT_ANTROPOMORFICO}
@@ -53,6 +60,10 @@ export const Projects = () => {
                     Creación de un brazos robótico tipo antropomórfico con su
                     respectiva documentación.
                   </p>
+                  {/* <p>Tecnologia utilizada</p>
+                  <ul>
+                    <li>Solidworks</li>
+                  </ul> */}
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -69,17 +80,19 @@ export const Projects = () => {
                   icon={<SiElectron />}
                 >
                   <h3 className="vertical-timeline-element-title">
-                    Electró-UDI
+                    Electró-TECH
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
+                  <h5 className="vertical-timeline-element-subtitle">
+                    Tecnológias: Javascript, Node.Js, Electron.Js, SASS
+                  </h5>
+                  {/* <h4 className="vertical-timeline-element-subtitle">
                     Javascript, Node.Js, Electron.Js, SASS
-                  </h4>
+                  </h4> */}
                   <img className="image-event" src={P_ELECTRO_UDI} alt="..." />
                   <p>
-                    Aplicación nativa de windows en la que los estudiantes de
-                    ingeniería electrónica de la Universidad de Investigación y
-                    Desarrollo pueden encontrar diferentes cursos académicos y
-                    proyectos realizados.
+                    Aplicación multiplataforma en la que los estudiantes de
+                    ingeniería electrónica pueden encontrar diferentes cursos
+                    académicos y proyectos realizados.
                   </p>
                 </VerticalTimelineElement>
 
@@ -99,9 +112,9 @@ export const Projects = () => {
                   <h3 className="vertical-timeline-element-title">
                     SCADA para la producción de cerveza
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    LabView
-                  </h4>
+                  <h5 className="vertical-timeline-element-subtitle">
+                    Tecnológias: LabVIEW
+                  </h5>
                   <img
                     className="image-event"
                     src={P_SCADA_LABVIEW_CERVEZA}

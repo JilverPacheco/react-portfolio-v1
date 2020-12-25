@@ -11,7 +11,7 @@
   color: #202020;
 }
 .skills .title::after {
-  content: "Trabajos";
+  content: "Profesionales";
   background-color: #f0f2f5;
 }
 .skills-content {
@@ -67,6 +67,7 @@
 }
 .skills .skills-content .right .bars {
   margin-bottom: 0px;
+  width: 100%;
 }
 .skills .skills-content .right .info {
   display: flex;

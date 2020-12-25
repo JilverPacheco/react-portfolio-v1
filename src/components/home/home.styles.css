@@ -26,3 +26,18 @@
 .banner-content .text-3 .text-3-content {
   font-weight: 500;
 }
+
+@media screen and (max-width: 960px) {
+
+  .banner-content .text-2 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .banner-content .text-3 {
+    font-size: 20px;
+    display: flex;
+  }
+  .banner-content .text-3 .text-3-content {
+    font-weight: 500;
+  }
+}

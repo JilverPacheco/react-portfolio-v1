@@ -7,7 +7,7 @@ export const Home = () => {
     <Fragment>
       <div className="banner" id="inicio">
         <div className="banner-content">
-          <div className="text-1">Hola, soy</div>
+          <div className="text-1">¡Hola!, soy</div>
           <div className="text-2">Jilver Pacheco Rivera</div>
           <div className="text-3">
             Soy:&nbsp;

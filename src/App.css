@@ -38,3 +38,26 @@ hr {
   );
   margin: 5px 0px;
 }
+
+.scroll-btn.active {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  background-color: #202020;
+  z-index: 100;
+}
+
+.scroll-btn {
+  display: none;
+  /* position: fixed; */
+  /* right: 20px; */
+  /* bottom: 20px; */
+  /* width: 30px; */
+  /* height: 30px; */
+  /* border: 2px solid #000; */
+  /* background-color: #202020; */
+  /* z-index: 100; */
+}

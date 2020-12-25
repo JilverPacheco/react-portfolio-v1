@@ -26,23 +26,21 @@ export const Skills = () => {
                   {/* <a href="#">Read more</a> */}
                 </div>
               </div>
-              <div>
-                <div className="column right">
-                  {SkillData.engineering.map((skill, index) => (
-                    <div className="bars">
-                      <span className="skill__card" key={index}></span>
-                      <div className="info">
-                        <span>{skill.name}</span>
-                        <span>{skill.percent}%</span>
-                      </div>
-                      <progress
-                        className="line"
-                        max="100"
-                        value={skill.percent}
-                      ></progress>
+              <div className="column right">
+                {SkillData.engineering.map((skill, index) => (
+                  <div className="bars">
+                    <span className="skill__card" key={index}></span>
+                    <div className="info">
+                      <span>{skill.name}</span>
+                      <span>{skill.percent}%</span>
                     </div>
-                  ))}
-                </div>
+                    <progress
+                      className="line"
+                      max="100"
+                      value={skill.percent}
+                    ></progress>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -77,7 +75,7 @@ export const Skills = () => {
               </div>
             </div>
 
-            <div className='skill-class-3'>
+            <div className="skill-class-3">
               <div className="column left">
                 <div className="text">Back-End-Web Development</div>
                 <p>

@@ -1,78 +1,89 @@
-import React, { Fragment, useState } from "react";
-import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
+import React, { Fragment, useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.styles.css";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false);
-  // const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-  //   const handleCLick = () => {
-  //     setClick(!click);
-  //   };
+  const handleClick = () => setClick(!click);
 
-  //   const closeMobileMenu = () => {
-  //     setClick(false);
-  //   };
+  const closeMobileMenu = () => setClick(false);
 
-  // const showMobileButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-
-  const changeNavBg = () => {
-    if (window.scrollY >= 40) {
+  const backgroundNavbar = () => {
+    if (window.scrollY > 60) {
       setNavbar(true);
     } else {
       setNavbar(false);
     }
-    console.log(window.scrollY);
   };
 
-  // useEffect(() => {
-  //   showMobileButton();
-  // }, []);
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
 
-  // window.addEventListener("resize", showMobileButton);
-  window.addEventListener("scroll", changeNavBg);
+  useEffect(() => {
+    backgroundNavbar();
+  }, [navbar]);
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("scroll", backgroundNavbar);
+  window.addEventListener("resize", showButton);
 
   return (
     <Fragment>
-      <div className={navbar ? "navbar active" : "navbar"}>
-        <div className="nav-content">
-          <div className="logo">
-            <a href="#inicio">
-              <FiChevronsLeft />
-              Jilver
-              <FiChevronsRight />
+      <nav className={navbar ? "navbar-scrolled" : "navbar"}>
+        <a className="logo" href="#">
+          ◄ Jilver ►
+        </a>
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? (
+            <FaTimes className="fa-times" />
+          ) : (
+            <FaBars className="fa-bars" />
+          )}
+        </div>
+
+        <div className={click ? "nav-menu-active" : "nav-menu"}>
+          <div className="menu">
+            <a href="#acerca" onClick={closeMobileMenu} className="nav_link">
+              Acerca
+            </a>
+            <a href="#educacion" onClick={closeMobileMenu} className="nav_link">
+              Educación
+            </a>
+            <a
+              href="#habilidades"
+              onClick={closeMobileMenu}
+              className="nav_link"
+            >
+              Habilidades
+            </a>
+
+            <a
+              href="#experiencia"
+              onClick={closeMobileMenu}
+              className="nav_link"
+            >
+              Experiencia
+            </a>
+            <a href="#proyectos" onClick={closeMobileMenu} className="nav_link">
+              Proyectos
+            </a>
+            <a href="#contacto" onClick={closeMobileMenu} className="nav_link">
+              Contacto
             </a>
           </div>
-          <ul className="menu-items">
-            <li className="nav-items">
-              <a href="#acerca">Acerca</a>
-            </li>
-            <li className="nav-items">
-              <a href="#educacion">Educación</a>
-            </li>
-
-            <li className="nav-items">
-              <a href="#habilidades">Habilidades</a>
-            </li>
-            <li className="nav-items">
-              <a href="#experiencia">Experiencia</a>
-            </li>
-            <li className="nav-items">
-              <a href="#proyectos">Proyectos</a>
-            </li>
-            <li className="nav-items">
-              <a href="#contacto">Contacto</a>
-            </li>
-          </ul>
         </div>
-      </div>
+      </nav>
     </Fragment>
   );
 };
